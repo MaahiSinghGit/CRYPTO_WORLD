@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/right"
+    android:background="#b3b3ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashScreen">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/mainlogo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crypto World"
+       android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#000080"
+        android:textSize="25dp"
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:text="All Rights Reserved.|| 2022 || Manoj Singh"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0000ff"/>
+</RelativeLayout>
+    <!--        created by Manoj Singh (maahisingh07m@gmail.com)-->
