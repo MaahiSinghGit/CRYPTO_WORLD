@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/enci"
+    tools:context=".imageEncryption">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6966f8"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" IMAGE DECRYPTION"
+                android:textColor="#EDC9AE"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+            <View
+                android:id="@+id/div1"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:background="#66FAFAFA"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99ff99">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paste Your Cipher Text Here..."
+                android:textColor="#0066ff"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          >
+
+            <EditText
+                android:id="@+id/enc_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:layout_weight="1"
+                android:background="#d9d9d9"
+                android:textColor="#262626"
+                android:ems="10"
+                android:hint="Encrypted Text..."
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/idecrypt"
+                android:layout_width="match_parent"
+               android:backgroundTint="#1aff1a"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_weight="1"
+                android:text="Decrypt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/gal"
+                />
+        </LinearLayout>
+<!--        created by Manoj Singh (maahisingh07m@gmail.com)-->
+    </LinearLayout>
+</ScrollView>
